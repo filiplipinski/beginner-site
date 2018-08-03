@@ -1,0 +1,700 @@
+/*
+font-family: 'Saira Condensed',
+sans-serif;
+font-family: 'Saira',
+sans-serif;
+*/
+
+/*lumia 520, galaxy s III, Pixel 2, Pixel 2 XL*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+html {
+    font-size: 10px;
+}
+
+/* HEADER  ________________________________________________________________________*/
+
+header {
+    position: relative;
+    overflow: hidden;
+    background-color: #29a6dc;
+    height: 100vh;
+    max-width: 1920px;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+
+header > * {
+    position: absolute;
+}
+
+header div.welcome {
+    z-index: 1;
+    top: 8%;
+    left: 5%;
+    right: 5%;
+    font-family: 'Saira Condensed', arial, sans-serif;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+header p {
+    font-size: 4em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+header h1 {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+header h1 span {
+    display: block;
+    font-weight: 700;
+}
+
+header button {
+    font-family: 'Saira', arial, sans-serif;
+    font-size: 1.2em;
+    font-weight: 300;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding: 8px 20px;
+}
+
+header img {
+    bottom: 0;
+    right: 0;
+    height: 50%;
+}
+
+@media (orientation: portrait) and (min-width: 360px) {
+    header {
+        font-size: 1.2rem;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 411px) {
+    header {
+        font-size: 1.6rem;
+    }
+    header img {
+        right: -10%;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+    header {
+        font-size: 2.4rem;
+    }
+    header img {
+        right: 8%;
+        bottom: -3%;
+    }
+}
+
+
+/*rozdzielczosc juz deskopowa*/
+
+@media (min-width: 1024px) {
+    header button {
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    header button:hover {
+        background-color: white;
+        color: #111;
+    }
+}
+
+@media (orientation: landscape) {
+    header img {
+        bottom: 0;
+        right: -5%;
+        height: 80%;
+    }
+    header div.welcome {
+        text-align: left;
+        left: 10%;
+        top: 25%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 640px) {
+    header {
+        font-size: 1.2rem;
+    }
+    header img {
+        height: 95%;
+        right: -10%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+    header {
+        font-size: 2.2rem;
+    }
+    header img {
+        height: 80%;
+        right: -20%;
+    }
+    header button {
+        margin-top: 80px;
+        border: 2px solid white;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1280px) {
+    header {
+        font-size: 2.4rem;
+    }
+    header img {
+        height: 80%;
+        right: -10%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1600px) {
+    header {
+        font-size: 3rem;
+    }
+    header img {
+        height: 100%;
+        right: 0%;
+    }
+    header button {
+        padding: 0 20px;
+        line-height: 90px;
+    }
+
+    section.features {
+        font-size: 2rem;
+    }
+}
+
+/* SECTION 1: FEATURES  ___________________________________________________________________*/
+
+section.features {
+    padding: 0 6%;
+    text-align: center;
+    font-size: 1rem;
+    margin: 9% auto;
+    max-width: 1600px;
+}
+
+.features h1 {
+    margin-top: 10%;
+    font-family: 'Saira Condensed', arial, sans-serif;
+    font-size: 2.4em;
+    text-transform: uppercase;
+    line-height: 1.4em;
+}
+
+.features h2 {
+    font-family: 'Saira Condensed', arial, sans-serif;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    line-height: 1.2em;
+}
+
+.features p {
+    font-family: 'Saira', arial, sans-serif;
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.features img {
+    width: 80%;
+    max-width: 375px;
+}
+
+.features div {
+    padding: 0 3%;
+}
+
+@media (min-width: 1024px) {
+    .features div {
+        float: left;
+        width: 33.333%;
+    }
+
+    section.features {
+        font-size: 1.3rem;
+    }
+    .features h1 {
+        font-size: 3.3em;
+    }
+}
+
+@media (min-width: 1600px) {
+    section.features {
+        font-size: 2rem;
+    }
+}
+
+/* SECTION 2: PORTFOLIO  _______________________________________________________________*/
+
+.portfolio {
+    background-color: #1e1e1e;
+    font-size: 1rem;
+    padding-bottom: 5%;
+}
+
+.portfolio h1 {
+    font-family: 'Saira Condensed', arial, sans-serif;
+    font-size: 3em;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 30px;
+    color: white;
+    padding: 5%;
+}
+
+.portfolio .about {
+    font-family: 'Saira', arial, sans-serif;
+    color: white;
+    padding: 7% 7% 7% 0;
+    margin-bottom: 4%;
+}
+
+.portfolio .projects:nth-of-type(1) {
+    background-color: #ff4f2c;
+}
+
+.portfolio .projects:nth-of-type(2) {
+    background-color: #0170ba;
+}
+
+.about h2 {
+    font-size: 1.8em;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 400;
+    padding-bottom: 3%;
+    border-bottom: 1px solid white;
+    text-indent: 8%;
+}
+
+.about p {
+    font-size: 1.2em;
+    padding-top: 3%;
+    padding-left: 8%;
+}
+
+.portfolio .photo img {
+    width: 100%;
+    display: block;
+}
+
+.portfolio .projects {
+    max-width: 1400px;
+    margin: 0 auto 5%;
+}
+
+@media (orientation: landscape) and (min-width: 768px) {
+    .portfolio {
+        font-size: 1.8rem;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+
+    .portfolio .photo,
+    .portfolio .about {
+        float: left;
+        width: 50%;
+    }
+
+    .portfolio .about {
+        padding: 4% 4% 4% 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .portfolio {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .portfolio {
+        font-size: 1.7rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .portfolio {
+        font-size: 1.9rem;
+    }
+}
+
+@media (min-width: 1600px) {
+    .portfolio {
+        font-size: 1.9rem;
+    }
+}
+
+/* SECTION: MOTTO _______________________________________________________________*/
+
+.motto {
+    font-size: 1rem;
+    background-image: url(../img/motto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.motto div {
+    background-color: rgba(0, 63, 114, 0.5);
+    color: white;
+    padding: 10% 8%;
+}
+
+.motto h1 {
+    font-family: 'Saira Condensed', arial, sans-serif;
+    font-size: 2.4em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 15%;
+
+}
+
+.motto p {
+    font-family: 'Saira', arial, sans-serif;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.motto .author {
+    font-family: 'Saira', arial, sans-serif;
+    font-size: 1.1em;
+    text-align: center;
+    margin: 5% 0 7%;
+}
+
+@media (orientation: landscape) and (min-width: 640px) {
+    .motto {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 640px) {
+    .motto div {
+        padding: 10% 15%;
+    }
+}
+
+@media (min-width: 768px) {
+    .motto {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .motto {
+        font-size: 1.8rem;
+    }
+}
+
+
+@media (min-width: 1366px) {
+    .motto {
+        font-size: 2.6rem;
+    }
+}
+
+@media (min-width: 1600px) {
+    .motto {
+        font-size: 2.6rem;
+    }
+    .motto div {
+        padding: 10% 20%;
+    }
+}
+
+/* SECTION: FREETIME ______________________________________________________________________*/
+
+.hobbies {
+    font-size: 1rem;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.hobbies h1 {
+    font-family: 'Saira Condensed', arial, sans-serif;
+    font-size: 2.2em;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5% 3%;
+
+}
+
+.hobbies .hobby {
+    height: 25vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hobbies .hobby p {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: 'Saira', arial, sans-serif;
+    font-size: 1.6em;
+    text-align: center;
+    text-shadow: 0 0 4px black;
+    /*    line-height: 25vh;*/
+    padding: 4%;
+}
+
+.hobbies .hobby:nth-of-type(1) {
+    background-image: url(../img/hobby1.jpg);
+}
+
+.hobbies .hobby:nth-of-type(2) {
+    background-image: url(../img/hobby2.jpg);
+}
+
+.hobbies .hobby:nth-of-type(3) {
+    background-image: url(../img/hobby3.jpg);
+}
+
+.hobbies .hobby:nth-of-type(4) {
+    background-image: url(../img/hobby4.jpg);
+}
+
+@media (min-width: 533px) {
+    .hobbies .hobby {
+        float: left;
+        width: 50%;
+        height: 40vh;
+    }
+}
+
+@media (min-width: 768px) {
+    .hobbies {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hobbies {
+        font-size: 2.2rem;
+    }
+
+    .hobbies .hobby p {
+        line-height: 40vh;
+        padding: 0;
+        opacity: 0;
+        transition: 1s;
+        cursor: default;
+    }
+    .hobbies .hobby:hover p {
+        opacity: 1;
+    }
+    .hobbies .hobby {
+        background-size: 100%;
+        transition: 1s;
+    }
+
+    .hobbies .hobby:hover {
+        background-size: 130%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .hobbies {
+        font-size: 2.6rem;
+    }
+}
+
+@media (min-width: 1600px) {
+    .hobbies {
+        font-size: 3rem;
+    }
+    .hobbies .hobby {
+        height: 65vh;
+    }
+    .hobbies .hobby p {
+        line-height: 65vh;
+    }
+}
+
+/*SECTION: CONTACT  ____________________________________________________________________________*/
+
+.contact {
+    font-size: 1rem;
+    background-color: #111;
+    padding: 5%;
+}
+
+.contact .wrap {
+    padding-top: 7%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.contact h1 {
+    font-family: 'Saira Condensed', arial, sans-serif;
+    font-size: 2.2em;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+}
+
+.contact .social span {
+    float: left;
+    font-family: 'Saira', arial, sans-serif;
+    font-size: 1.4em;
+    line-height: 36px;
+    opacity: 0.8;
+    color: white;
+    padding-left: 6%;
+}
+
+.contact .socials img {
+    float: left;
+    width: 3.6em;
+}
+
+.contact input,
+.contact textarea,
+.contact button {
+    font-family: 'Saira', arial, sans-serif;
+    width: 100%;
+    margin-bottom: 5%;
+    padding: 2%;
+    font-size: 1.2em;
+
+}
+
+.contact input {
+    height: 36px;
+}
+
+.contact textarea {
+    height: 120px;
+}
+
+.contact button {
+    font-size: 1.4em;
+    line-height: 40px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+.contact .socials {
+    padding-top: 3%;
+}
+
+.contact .social {
+    padding: 3% 0;
+}
+
+@media (min-width: 533px) {
+    .contact .social {
+        display: inline-block;
+        width: 49%;
+    }
+}
+
+@media (min-width: 768px) {
+    .contact {
+        font-size: 1.4rem;
+    }
+    .contact .social span {
+        line-height: 50.4px;
+        /*        original: 36px*/
+    }
+    .contact button {
+        line-height: 56px;
+        /*        original: 40px;*/
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .contact h1 {
+        font-size: 3.4em;
+    }
+    .contact {
+        font-size: 1.6rem;
+    }
+    .contact .social span {
+        line-height: 57.6px;
+        /*        original: 36px*/
+    }
+    .contact button {
+        cursor: pointer;
+        transition: .3s;
+        line-height: 64px;
+        /*        original: 40px;*/
+    }
+
+    .contact form,
+    .contact .socials {
+        float: left;
+        width: 50%;
+        padding: 0 4%;
+    }
+
+    .contact .social {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .contact button:hover {
+        color: #111;
+        background-color: white;
+
+    }
+}
+
+/* FOOTER  _____________________________________________________________________________*/
+
+footer {
+    background-color: #29a6dc;
+    font-family: 'Saira', arial, sans-serif;
+    color: #111;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+@media (min-width: 731px) {
+    footer {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    footer {
+        font-size: 1.6rem;
+    }
+}
+
+@media (min-width: 1600px) {
+    footer {
+        font-size: 1.8rem;
+    }
+}
