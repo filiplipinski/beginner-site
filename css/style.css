@@ -35,7 +35,7 @@ header {
     font-size: 1rem;
 }
 
-header > * {
+header>* {
     position: absolute;
 }
 
@@ -94,6 +94,7 @@ header img {
     header {
         font-size: 1.6rem;
     }
+
     header img {
         right: -10%;
     }
@@ -103,6 +104,7 @@ header img {
     header {
         font-size: 2.4rem;
     }
+
     header img {
         right: 8%;
         bottom: -3%;
@@ -117,6 +119,7 @@ header img {
         cursor: pointer;
         transition: 0.3s;
     }
+
     header button:hover {
         background-color: white;
         color: #111;
@@ -129,6 +132,7 @@ header img {
         right: -5%;
         height: 80%;
     }
+
     header div.welcome {
         text-align: left;
         left: 10%;
@@ -140,6 +144,7 @@ header img {
     header {
         font-size: 1.2rem;
     }
+
     header img {
         height: 95%;
         right: -10%;
@@ -150,10 +155,12 @@ header img {
     header {
         font-size: 2.2rem;
     }
+
     header img {
         height: 80%;
         right: -20%;
     }
+
     header button {
         margin-top: 80px;
         border: 2px solid white;
@@ -164,6 +171,7 @@ header img {
     header {
         font-size: 2.4rem;
     }
+
     header img {
         height: 80%;
         right: -10%;
@@ -174,10 +182,12 @@ header img {
     header {
         font-size: 3rem;
     }
+
     header img {
         height: 100%;
         right: 0%;
     }
+
     header button {
         padding: 0 20px;
         line-height: 90px;
@@ -238,6 +248,7 @@ section.features {
     section.features {
         font-size: 1.3rem;
     }
+
     .features h1 {
         font-size: 3.3em;
     }
@@ -341,13 +352,13 @@ section.features {
 
 @media (min-width: 1280px) {
     .portfolio {
-        font-size: 1.9rem;
+        font-size: 1.8rem;
     }
 }
 
 @media (min-width: 1600px) {
     .portfolio {
-        font-size: 1.9rem;
+        font-size: 1.8rem;
     }
 }
 
@@ -426,6 +437,7 @@ section.features {
     .motto {
         font-size: 2.6rem;
     }
+
     .motto div {
         padding: 10% 20%;
     }
@@ -508,9 +520,11 @@ section.features {
         transition: 1s;
         cursor: default;
     }
+
     .hobbies .hobby:hover p {
         opacity: 1;
     }
+
     .hobbies .hobby {
         background-size: 100%;
         transition: 1s;
@@ -531,9 +545,11 @@ section.features {
     .hobbies {
         font-size: 3rem;
     }
+
     .hobbies .hobby {
         height: 65vh;
     }
+
     .hobbies .hobby p {
         line-height: 65vh;
     }
@@ -622,10 +638,12 @@ section.features {
     .contact {
         font-size: 1.4rem;
     }
+
     .contact .social span {
         line-height: 50.4px;
         /*        original: 36px*/
     }
+
     .contact button {
         line-height: 56px;
         /*        original: 40px;*/
@@ -637,13 +655,16 @@ section.features {
     .contact h1 {
         font-size: 3.4em;
     }
+
     .contact {
         font-size: 1.6rem;
     }
+
     .contact .social span {
         line-height: 57.6px;
         /*        original: 36px*/
     }
+
     .contact button {
         cursor: pointer;
         transition: .3s;
@@ -663,6 +684,7 @@ section.features {
         width: 100%;
         margin: 0 auto;
     }
+
     .contact button:hover {
         color: #111;
         background-color: white;
